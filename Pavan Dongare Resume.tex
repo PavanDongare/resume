@@ -4,7 +4,16 @@
 \usepackage{array}
 \usepackage{enumitem}
 \usepackage{titlesec}
+\usepackage{xcolor}
 \usepackage{hyperref}
+
+% Hyperlink setup: colored text links, no boxes
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!70!black,
+    urlcolor=blue!70!black,
+    pdfborder={0 0 0}
+}
 
 % Remove page numbers
 \pagenumbering{gobble}
@@ -12,12 +21,6 @@
 % Custom section formatting
 \titleformat{\section}{\large\bfseries}{}{0em}{}[\vspace{2pt}\hrule\vspace{2pt}]
 \titlespacing{\section}{0pt}{4pt}{2pt}
-
-% Hyperlink setup
-\hypersetup{
-    colorlinks=false,
-    pdfborder={0 0 0}
-}
 
 % Avoid hyphenated word breaks
 \sloppy
@@ -47,7 +50,8 @@
     \textbf{\Large PAVAN DONGARE} \\
     Product Manager | Growth \& Tech Platforms \\
     Email: dongare.pavan25@gmail.com | Phone: 919049481501 \\
-    LinkedIn: \href{https://linkedin.com/in/pavan-dongare}{linkedin.com/in/pavan-dongare} | Address: Hinjewadi, Pune - 411033
+    LinkedIn: \href{https://linkedin.com/in/pavan-dongare}{\textcolor{blue!70!black}{linkedin.com/in/pavan-dongare}} \\
+    Address: Hinjewadi, Pune - 411033
 \end{center}
 
 \section{PROFESSIONAL SUMMARY}
@@ -82,10 +86,10 @@
 {\renewcommand{\arraystretch}{1.2}
 \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{1.8cm}|X|}
 \hline
-\textbf{Product:} & \textbf{B2B marketplace SaaS} \\ & Government \textbf{workflow apps} for \href{https://www.mahapolice.gov.in/}{Maharashtra Police} \\ \hline
+\textbf{Product:} & \textbf{B2B marketplace SaaS} \\ & Government \textbf{workflow apps} for \href{https://www.mahapolice.gov.in/}{\textcolor{blue!70!black}{Maharashtra Police}} \\ \hline
 \textbf{Scope:} & \begin{itemize}[leftmargin=*,nosep]
     \item Led \textbf{30+ team} retention strategy, executed \textbf{100+ A/B tests} with Firebase, GA4, Mixpanel
-    \item Developed workflow apps and 10 websites for state govt police - \href{https://www.mahapolice.gov.in/}{mahapolice.gov.in}
+    \item Developed workflow apps and 10 websites for state govt police - \href{https://www.mahapolice.gov.in/}{\textcolor{blue!70!black}{mahapolice.gov.in}}
 \end{itemize} \\ \hline
 \textbf{Impact:} & \begin{itemize}[leftmargin=*,nosep]
     \item \textbf{10X growth}: 924 → \textbf{9,000 users/day}, \textbf{+20\% W1 retention}, \textbf{3X organic traffic}
@@ -123,7 +127,7 @@ Designed \& prototyped \textbf{help-desk portal} achieving \textbf{15\% NPS impr
 \section{PROFESSIONAL CERTIFICATION}
 
 \begin{itemize}[leftmargin=*]
-    \item Microsoft AI Product Manager Professional Certificate 
+    \item \href{https://www.coursera.org/account/accomplishments/specialization/VEVUE3HVB14I}{\textcolor{blue!70!black}{Microsoft AI Product Manager Professional Certificate}}
 \end{itemize}
 
 \end{document}
